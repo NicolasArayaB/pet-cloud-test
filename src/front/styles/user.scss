@@ -1,0 +1,56 @@
+.img-pet {
+    margin: auto;
+}
+
+.marginGroup {
+    margin-top: 8rem;
+}
+
+.titlePet {
+    margin-top: 8rem;
+    text-align: center;
+
+}
+
+.titlePet_not_found {
+    margin-top: 3rem;
+    text-align: center;
+    color: #66B9BF;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+
+}
+
+.rounded-circle {
+    cursor: pointer;
+}
+
+.pets-list {
+    border-radius: 10px;
+    color: #E37222;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+     
+}
+
+.pet-name {
+    margin-top: 80px;
+}
+
+.google-address-input {
+    border-color: #ffffff;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 37px; 
+    color: #6c757d;
+    outline: none;
+    text-indent: 10px;
+}
+
+.google-address-input:focus {
+    border-color: #bfdeff;
+    box-shadow: 0px 0px 0px 3px rgba(191,222,255,0.8) ;
+}
+
+
