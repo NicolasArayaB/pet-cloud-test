@@ -33,9 +33,9 @@ export const PetInformation = props => {
 		myWidget.open();
 	};
 
-	useEffect(async () => {
-		await actions.getPetById(chip);
-		await actions.getPetCloudById(id);
+	useEffect(() => {
+		actions.getPetById(chip);
+		actions.getPetCloudById(id);
 	}, []);
 
 	return (
@@ -87,7 +87,7 @@ export const PetInformation = props => {
 										Mi nombre es:
 									</Form.Label>
 									<Col sm="10">
-										<Form.Control type="text" name="name" value={store.petById.name} />
+										<Form.Control type="text" name="name" value={store.petById.name} readOnly />
 									</Col>
 								</Form.Group>
 								<Form.Group as={Row} controlId="formPlaintextIdentifier">
@@ -95,7 +95,12 @@ export const PetInformation = props => {
 										Mi número de CHIP:
 									</Form.Label>
 									<Col sm="10">
-										<Form.Control type="text" name="identifier" value={store.petById.chip} />
+										<Form.Control
+											type="text"
+											name="identifier"
+											value={store.petById.chip}
+											readOnly
+										/>
 									</Col>
 								</Form.Group>
 								<Form.Group as={Row} controlId="formPlaintextWeight">
@@ -103,7 +108,7 @@ export const PetInformation = props => {
 										Género:
 									</Form.Label>
 									<Col sm="10">
-										<Form.Control type="text" name="gender" value={store.petById.gender} />
+										<Form.Control type="text" name="gender" value={store.petById.gender} readOnly />
 									</Col>
 								</Form.Group>
 								<Form.Group as={Row} controlId="formPlaintextWeight">
@@ -111,7 +116,12 @@ export const PetInformation = props => {
 										Fecha de Nacimiento:
 									</Form.Label>
 									<Col sm="10">
-										<Form.Control type="text" name="birthDate" value={store.petById.birthDate} />
+										<Form.Control
+											type="text"
+											name="birthDate"
+											value={store.petById.birthDate}
+											readOnly
+										/>
 									</Col>
 								</Form.Group>
 							</Form>
@@ -148,6 +158,7 @@ export const PetInformation = props => {
 												" " +
 												store.petById.petOwner_mother
 											}
+											readOnly
 										/>
 									</Col>
 								</Form.Group>
@@ -156,7 +167,12 @@ export const PetInformation = props => {
 										Vive en:
 									</Form.Label>
 									<Col lg="10">
-										<Form.Control type="text" name="address" value={store.petById.address} />
+										<Form.Control
+											type="text"
+											name="address"
+											value={store.petById.address}
+											readOnly
+										/>
 									</Col>
 								</Form.Group>
 								<Form.Group as={Row} controlId="formPlaintextPhone">
@@ -164,7 +180,7 @@ export const PetInformation = props => {
 										Su teléfono es:
 									</Form.Label>
 									<Col lg="10">
-										<Form.Control type="text" name="phone" value={store.petById.phone} />
+										<Form.Control type="text" name="phone" value={store.petById.phone} readOnly />
 									</Col>
 								</Form.Group>
 								<Form.Group as={Row} controlId="formPlaintextEmail">
@@ -172,7 +188,7 @@ export const PetInformation = props => {
 										Su mail:
 									</Form.Label>
 									<Col lg="10">
-										<Form.Control type="text" name="email" value={store.petById.email} />
+										<Form.Control type="text" name="email" value={store.petById.email} readOnly />
 									</Col>
 								</Form.Group>
 							</Form>

@@ -39,7 +39,7 @@ const Checkup = props => {
 };
 
 Checkup.propTypes = {
-	condition: PropTypes.string,
+	condition: PropTypes.array,
 	update: PropTypes.string,
 	weight: PropTypes.integer,
 	genderStatus: PropTypes.string

@@ -3,8 +3,6 @@ import PlacesAutocomplete from "react-places-autocomplete";
 import "../../styles/user.scss";
 
 const GoogleAddress = props => {
-	console.log(props.address, "<--address");
-
 	return (
 		<div>
 			<PlacesAutocomplete type="text" name="address" value={props.address} onChange={props.setAddress}>

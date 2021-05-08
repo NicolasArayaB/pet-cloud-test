@@ -26,7 +26,6 @@ const NewPetForm = () => {
 	// const addressFunction = () => {
 	// 	return setAddress;
 	// };
-	console.log(setAddress, "<--address");
 
 	const expresions = {
 		identifier: /^\d{15}$/, // 15 numbers
@@ -107,9 +106,7 @@ const NewPetForm = () => {
 				icon: "success",
 				title: "Mascota ingresada en forma exitosa."
 			});
-
 			setRedirect(true);
-			console.log("You have an error");
 		}
 	};
 

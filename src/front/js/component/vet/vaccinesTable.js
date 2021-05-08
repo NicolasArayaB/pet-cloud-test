@@ -36,7 +36,7 @@ const Vaccines = props => {
 
 Vaccines.propTypes = {
 	vaccine: PropTypes.string,
-	date: PropTypes.string,
+	date: PropTypes.array,
 	dose: PropTypes.string
 };
 
